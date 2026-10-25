@@ -470,7 +470,7 @@ JavaScriptの学習はしっかりと出来ていないため、Hotwireをカス
 実装の手順を極限まで細分化（Issue化）します。これにより、「ルーティングの設定」「コントローラーの追加」など、自分の分かる範囲と分からない範囲が明確になり、調査にかかる時間を見積もりやすくなります。
 
 ### 画面遷移図
-Figma：<https://www.figma.com/design/jOrISi6j4wBgHtf93VQrFG/%E7%94%BB%E9%9D%A2%E9%81%B7%E7%A7%BB%E5%9B%B3?node-id=16-414&t=1DSCAxctRvhnKQpt-0>
+Figma：<https://www.figma.com/design/jOrISi6j4wBgHtf93VQrFG/%E7%94%BB%E9%9D%A2%E9%81%B7%E7%A7%BB%E5%9B%B3?node-id=16-414&t=Di9TtU3qLNaXvDNO-1>
 
 ### 本サービスの概要（700文字以内）
 
