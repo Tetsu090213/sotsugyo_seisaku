@@ -472,3 +472,7 @@ JavaScriptの学習はしっかりと出来ていないため、Hotwireをカス
 ### 画面遷移図
 Figma：<https://www.figma.com/design/jOrISi6j4wBgHtf93VQrFG/%E7%94%BB%E9%9D%A2%E9%81%B7%E7%A7%BB%E5%9B%B3?node-id=16-414&t=Di9TtU3qLNaXvDNO-1>
 
+### ER図
+draw.ioにて作成、Googleドライブに保存：<https://drive.google.com/file/d/1hEXnmDOQUHevlRg7zgk1EHjVETkrwaOp/view?usp=sharing>
+
+Gyazo：<https://gyazo.com/e5c4e07fa8d21d3f42aeb096f146b042>
