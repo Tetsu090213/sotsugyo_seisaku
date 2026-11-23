@@ -1,0 +1,36 @@
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  web:
+    build: .
+    command: bash -c "rm -f tmp/pids/server.pid && ./bin/dev"
+    volumes:
+      - .:/app
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+    tty: true
+    stdin_open: true
+    environment:
+      DATABASE_HOST: db
+      DATABASE_USER: postgres
+      DATABASE_PASSWORD: password
+
+volumes:
+  postgres_data:
+
+
+# 超ざっくり解説（ここだけ分かればOK）
+
+# • db: …… データベース（PostgreSQL）の設定です。パスワードを仮で password にしています（ローカルPCの中だけで動くものなのでこれでOKです）。
+# • web: …… Railsアプリの設定です。volumes: - .:/app と書くことで、あなたのPCのフォルダ（.）とコンテナ内の /app がリアルタイムで同期されます。
+# • ports: - "3000:3000" …… ブラウザで http://localhost:3000 を開いたときにRailsにつながる設定です。
