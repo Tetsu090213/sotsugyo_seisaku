@@ -1,0 +1,85 @@
+<div class="max-w-3xl mx-auto px-4 py-10 sm:py-16 sm:px-6">
+  <%# ファーストビュー %>
+  <section class="text-center space-y-6">
+    <span class="inline-block px-3 py-1 text-xs font-semibold text-indigo-700 bg-indigo-100 dark:text-indigo-300 dark:bg-indigo-950 rounded-full">
+      完全プライベート・個人向け事実記録ツール
+    </span>
+
+    <h1 class="text-xl sm:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-snug">
+      「言った通りにやったのに怒られる」<br>
+      その理不尽を、自分を守る盾に変える。
+    </h1>
+
+    <p class="text-sm sm:text-base text-gray-600 dark:text-gray-300 max-w-xl mx-auto leading-relaxed">
+      口頭の指示は証拠が残らず、「自分が悪いのかも」と思い詰めてしまいがちです。<br>
+      日々の指示と、後から受けた矛盾した叱責をツリー形式で紐付けて記録し、あなたの心と事実を守ります。
+    </p>
+
+    <div class="pt-2 flex flex-col sm:flex-row justify-center gap-3">
+      <%= link_to "無料で記録を始める", "#",
+          class: "w-full sm:w-auto px-6 py-3.5 text-base font-bold text-white bg-indigo-600 hover:bg-indigo-700 rounded-xl shadow-sm transition-colors" %>
+      <%= link_to "ログインはこちら", "#",
+          class: "w-full sm:w-auto px-6 py-3.5 text-base font-medium text-gray-700 dark:text-gray-200 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700 rounded-xl transition-colors" %>
+    </div>
+  </section>
+
+  <%# ツリー紐付けのイメージデモ %>
+  <section class="mt-14 bg-white dark:bg-gray-900 rounded-2xl p-5 sm:p-8 shadow-sm border border-gray-200 dark:border-gray-800">
+    <h2 class="text-base sm:text-lg font-bold text-center text-gray-900 dark:text-white mb-6">
+      指示のダブルスタンダードを「見える化」
+    </h2>
+
+    <div class="space-y-4">
+      <%# 親ログ（過去の指示） %>
+      <div class="p-4 rounded-xl bg-slate-100 dark:bg-gray-800 border border-slate-200 dark:border-gray-700">
+        <div class="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400 mb-1">
+          <span class="font-semibold text-indigo-600 dark:text-indigo-400">📌 過去の指示</span>
+          <span>11/25 14:30</span>
+        </div>
+        <p class="text-sm sm:text-base text-gray-800 dark:text-gray-200">
+          「この資料は細かく書かなくていいから、要点だけ3行でまとめて今日中に出して」
+        </p>
+      </div>
+
+      <%# 子ログ（矛盾した指示） %>
+      <div class="ml-4 sm:ml-8 pl-4 border-l-2 border-rose-400 dark:border-rose-500">
+        <div class="p-4 rounded-xl bg-rose-50 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-900">
+          <div class="flex items-center justify-between text-xs text-rose-600 dark:text-rose-400 mb-1">
+            <span class="font-semibold">⚡ 矛盾した指示</span>
+            <span>11/26 09:15</span>
+          </div>
+          <p class="text-sm sm:text-base text-gray-800 dark:text-gray-200">
+            「なんでこんなに中身がスカスカなんだ！背景も数字も全部書かないと意味がないだろう！」
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <%# 3つの特徴 %>
+  <section class="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
+    <div class="p-5 bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800">
+      <div class="text-xl mb-2">💬</div>
+      <h3 class="font-bold text-gray-900 dark:text-white mb-1">チャット感覚で即メモ</h3>
+      <p class="text-xs sm:text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+        トイレ休憩や帰宅中のスマホから、日時付きでサッと記録を残せます。
+      </p>
+    </div>
+
+    <div class="p-5 bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800">
+      <div class="text-xl mb-2">🌿</div>
+      <h3 class="font-bold text-gray-900 dark:text-white mb-1">矛盾をツリーで紐付け</h3>
+      <p class="text-xs sm:text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+        過去の指示に後から受けた叱責をぶら下げ、理不尽さを客観的に整理できます。
+      </p>
+    </div>
+
+    <div class="p-5 bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800">
+      <div class="text-xl mb-2">🔒</div>
+      <h3 class="font-bold text-gray-900 dark:text-white mb-1">完全プライベート空間</h3>
+      <p class="text-xs sm:text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+        SNSのような公開機能は一切なし。あなた以外には絶対に見られません。
+      </p>
+    </div>
+  </section>
+</div>
